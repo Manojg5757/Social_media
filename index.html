@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB_clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c7362fc78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+       <div class="nav-left">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <ul>
+            <li><img src="images/notification.png" alt="logo"></li>
+            <li><img src="images//inbox.png" alt="logo"></li>
+            <li><img src="images/video.png" alt="logo"></li>
+        </ul>
+       </div> 
+       <div class="nav-right">
+        <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+            
+        </div>
+        <div class="nav-user-icon " onclick=settings()>
+            <div class="online"></div>
+            <img src="images/profile-pic.png" alt="">
+        </div>
+       </div>
+
+       <div class="settings-menu">
+        <div class="btn-out" onclick=changeTheme()>
+            <span class="btn-in"></span>
+        </div>
+        <div class="settings-menu-inner">
+            <div class="profile-pict">
+                <img src="images/status-1.png" alt="">
+                <div class="details">
+                    <h2>Manoj</h2>
+                    <a href="#">See Your Profile</a>
+                </div>
+            </div>
+       <hr>
+            <div class="profile-pict">
+                <img src="images/feedback.png" alt="">
+                <div class="details">
+                    <h2>Feedback</h2>
+                    <a href="#">Help Us improve</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="settings-links">
+                <img src="images/setting.png" class='set-icon' alt="">
+                <a href="#">Settings <img src="images/arrow.png" width="10px"  alt=""></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/help.png" class='set-icon' alt="">
+                <a href="#">Help <img src="images/arrow.png" width="10px"  alt=""></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/display.png" class='set-icon' alt="">
+                <a href="#">Display Access <img src="images/arrow.png" width="10px"  alt=""></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/logout.png" class='set-icon' alt="">
+                <a href="#">Logout <img src="images/arrow.png" width="10px"  alt=""></a>
+            </div>
+           </div>
+          
+        </div>
+       
+       
+    </nav>
+
+    <div class="container">
+        <!--left bar  -->
+         <div class="left-bar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="">News</a>
+                <a href="#"><img src="images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="images/group.png" alt="">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="">Watch</a>
+                <a href="#">See more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="">web</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="">web developer</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="">web socket</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="">web 3</a>
+            </div>
+         </div>
+         <!-- main bar -->
+         <div class="main-bar">
+             <div class="story-gallery">
+                <div class="story story0">
+                    <img src="images/upload.png" alt="">
+                    <p>Post a Story</p>
+                </div>
+                <div class="story story1">
+                    <img src="images/member-1.png" alt="">
+                    <p>Allison</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-2.png" alt="">
+                    <p>DRe</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-3.png" alt="">
+                    <p>Sofia</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-4.png" alt="">
+                    <p>Sam</p>
+                </div>
+             </div>
+
+             <div class="post-story">
+                <div class="profile-pict">
+                    <img src="images/status-1.png" alt="">
+                    <div class="details">
+                        <h2>Manoj</h2>
+                        <p>Public<i class="fa-sharp fa-solid fa-caret-down"></i></p>
+                    </div>
+                </div>
+                <div class="text-box">
+                <textarea rows="4" placeholder="Write here"></textarea>
+                </div>
+                <div class="post-links">
+                    <a href=""><img src="images/live-video.png" alt="">Video</a>
+                    <a href=""><img src="images/photo.png" alt="">Photo</a>
+                    <a href=""><img src="images/feeling.png" alt="">Feelings</a>
+                </div>
+                
+             </div>
+             <div class="post-container">
+             <div class="profile-pic">
+                <div class="profile-pic-inside">
+                <img src="images/status-1.png" alt="">
+                <div class="details">
+                    <h2>Manoj</h2>
+                    <span>May 15 2023, 1:40 AM</span>
+                </div>
+                
+            </div>
+                <a class="menu-opt" href=""><i  class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+            <p class="post-text">Lovely Website that <span> inspires </span>you to do something big in this industry <a href="#">#web</a> <a href="#">#Websocket</a></p>
+            <img class="post-image" src="images/feed-image-1.png">
+            <div class="post-row">
+                <div class="activity-icons">
+                   <img src="images/like-blue.png">
+                   <img src="images/comments.png">
+                   <img src="images/share.png">
+                </div>
+                <div class="user-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-container">
+            <div class="profile-pic">
+               <div class="profile-pic-inside">
+               <img src="images/status-1.png" alt="">
+               <div class="details">
+                   <h2>Manoj</h2>
+                   <span>May 15 2023, 1:40 AM</span>
+               </div>
+               
+           </div>
+               <a class="menu-opt" href=""><i  class="fa-solid fa-ellipsis-vertical"></i></a>
+           </div>
+           <p class="post-text">Lovely Website that <span> inspires </span>you to do something big in this industry <a href="#">#web</a> <a href="#">#Websocket</a></p>
+           <img class="post-image" src="images/feed-image-2.png">
+           <div class="post-row">
+               <div class="activity-icons">
+                  <img src="images/like-blue.png">
+                  <img src="images/comments.png">
+                  <img src="images/share.png">
+               </div>
+               <div class="user-icon">
+                   <img src="images/profile-pic.png" alt=""><i class="fa-sharp fa-solid fa-caret-down"></i>
+               </div>
+           </div>
+       </div>
+       <div class="post-container">
+        <div class="profile-pic">
+           <div class="profile-pic-inside">
+           <img src="images/status-1.png" alt="">
+           <div class="details">
+               <h2>Manoj</h2>
+               <span>May 15 2023, 1:40 AM</span>
+           </div>
+           
+       </div>
+           <a class="menu-opt" href=""><i  class="fa-solid fa-ellipsis-vertical"></i></a>
+       </div>
+       <p class="post-text">Lovely Website that <span> inspires </span>you to do something big in this industry <a href="#">#web</a> <a href="#">#Websocket</a></p>
+       <img class="post-image" src="images/feed-image-3.png">
+       <div class="post-row">
+           <div class="activity-icons">
+              <img src="images/like-blue.png">
+              <img src="images/comments.png">
+              <img src="images/share.png">
+           </div>
+           <div class="user-icon">
+               <img src="images/profile-pic.png" alt=""><i class="fa-sharp fa-solid fa-caret-down"></i>
+           </div>
+       </div>
+   </div>
+   <div class="post-container">
+    <div class="profile-pic">
+       <div class="profile-pic-inside">
+       <img src="images/status-1.png" alt="">
+       <div class="details">
+           <h2>Manoj</h2>
+           <span>May 15 2023, 1:40 AM</span>
+       </div>
+       
+   </div>
+       <a class="menu-opt" href=""><i  class="fa-solid fa-ellipsis-vertical"></i></a>
+   </div>
+   <p class="post-text">Lovely Website that <span> inspires </span>you to do something big in this industry <a href="#">#web</a> <a href="#">#Websocket</a></p>
+   <img class="post-image" src="images/feed-image-4.png">
+   <div class="post-row">
+       <div class="activity-icons">
+          <img src="images/like-blue.png">
+          <img src="images/comments.png">
+          <img src="images/share.png">
+       </div>
+       <div class="user-icon">
+           <img src="images/profile-pic.png" alt=""><i class="fa-sharp fa-solid fa-caret-down"></i>
+       </div>
+   </div>
+</div>
+<div class="post-container">
+    <div class="profile-pic">
+       <div class="profile-pic-inside">
+       <img src="images/status-1.png" alt="">
+       <div class="details">
+           <h2>Manoj</h2>
+           <span>May 15 2023, 1:40 AM</span>
+       </div>
+       
+   </div>
+       <a class="menu-opt" href=""><i  class="fa-solid fa-ellipsis-vertical"></i></a>
+   </div>
+   <p class="post-text">Lovely Website that <span> inspires </span>you to do something big in this industry <a href="#">#web</a> <a href="#">#Websocket</a></p>
+   <img class="post-image" src="images/feed-image-5.png">
+   <div class="post-row">
+       <div class="activity-icons">
+          <img src="images/like-blue.png">
+          <img src="images/comments.png">
+          <img src="images/share.png">
+       </div>
+       <div class="user-icon">
+           <img src="images/profile-pic.png" alt=""><i class="fa-sharp fa-solid fa-caret-down"></i>
+       </div>
+   </div>
+</div>
+     <button class="load_more">Load More ...</button>
+   
+          
+         </div>
+         <!-- right bar -->
+         <div class="right-bar">
+            <div class="siderbar-title">
+                <h4>Events</h4>
+                <a href="">See all</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>13</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social MEdia</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Cbe Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>15</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Web developer</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Cbe Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="siderbar-title">
+                <h4>Advertisements</h4>
+                <a href="">Close</a>
+            </div>
+            <img src="images/advertisement.png" alt="ad" class="ads">
+            <div class="siderbar-title">
+                <h4>Conversation</h4>
+                <a href="">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Pearson Jackson</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Pearson Jackson</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Pearson Jackson</p>
+            </div>
+            
+         </div>
+    </div>
+
+<div class="footer">
+    <p>CopyRight 2023 - All Rights Reserved By Manoj</p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
